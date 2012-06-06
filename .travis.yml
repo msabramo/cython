@@ -9,4 +9,4 @@ python:
 
 install: pip install .
 
-script: python runtests.py -vv --cython-only
+script: CFLAGS=-O0 python runtests.py -vv
